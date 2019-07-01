@@ -1,0 +1,33 @@
+.skill {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top right, #000, #2d033a);
+  padding: 24px;
+  height: 100%;
+  &__icon {
+    margin-bottom: 32px;
+  }
+  &__icon img {
+    height: 80px;
+  }
+  &__title {
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  &__description {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .6);
+    line-height: 1.8;
+  }
+}
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  @include sp {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+}

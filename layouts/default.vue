@@ -6,17 +6,23 @@
       </p>
       <ul class="gnav">
         <li class="gnav__item">
-          <a href="#profile" class="gnav__link">プロフィール</a>
+          <nuxt-link to="#profile" class="gnav__link">
+            プロフィール
+          </nuxt-link>
         </li>
       </ul>
       <ul class="gnav">
         <li class="gnav__item">
-          <a href="#skill" class="gnav__link">スキルセット</a>
+          <nuxt-link to="/pages" class="gnav__link">
+            スキルセット
+          </nuxt-link>
         </li>
       </ul>
       <ul class="gnav">
         <li class="gnav__item">
-          <a href="" class="gnav__link">仕事の相談</a>
+          <nuxt-link to="" class="gnav__link">
+            仕事の相談
+          </nuxt-link>
         </li>
       </ul>
     </header>
@@ -40,7 +46,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   padding: 0 16px;
   display: flex;
@@ -56,6 +62,80 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   @include sp {
     font-size: 24px;
+  }
+}
+
+.gnav {
+  display: flex;
+  &__link {
+    padding: 0 8px;
+    font-size: 13px;
+    position: relative;
+    line-height: 56px;
+    display: block;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #fff;
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    &:hover:after {
+      opacity: 1;
+    }
+  }
+  @include sp {
+    display: none;
+  }
+}
+
+.footer {
+  padding: 16px;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+  font-size: 12px;
+  color: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: space-between;
+  @include sp {
+    display: block;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  list-style: none;
+  @include sp {
+    display: block;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+}
+
+.footer-nav__item + .footer-nav__item:before {
+  content: "|";
+  margin: 0 8px;
+  @include sp {
+    display: none;
+  }
+}
+
+.footer-nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section {
+  padding: 80px 0;
+  &--light {
+    background: #fff;
+  }
+  &--dark {
+    background: linear-gradient(to top right, #000, #2d033a);
   }
 }
 </style>

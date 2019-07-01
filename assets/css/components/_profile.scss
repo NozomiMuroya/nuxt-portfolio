@@ -1,0 +1,40 @@
+.profile {
+  display: flex;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  @include sp {
+    display: block;
+  }
+  &__photo {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-right: 24px;
+    background: center/cover url(/imges/profile.png);
+    @include sp {
+      margin: 0 auto 16px;
+    }
+  }
+  &__body {
+    flex: 1;
+  }
+  &__name {
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 1;
+    font-weight: bold;
+    @include sp {
+      text-align: center;
+    }
+    rt {
+      font-weight: normal;
+      color: rgba(0, 0, 0, .6);
+    }
+  }
+  &__text {
+    line-height: 1.4;
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
