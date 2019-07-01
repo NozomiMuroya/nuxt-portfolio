@@ -40,4 +40,22 @@
   </div>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+.header {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 56px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, .8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  @include sp {
+    font-size: 24px;
+  }
+}
+</style>
