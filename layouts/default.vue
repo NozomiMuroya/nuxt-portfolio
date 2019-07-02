@@ -6,21 +6,21 @@
       </p>
       <ul class="gnav">
         <li class="gnav__item">
-          <nuxt-link to="#profile" class="gnav__link">
+          <nuxt-link to="/#profile" href="#profile" class="gnav__link">
             プロフィール
           </nuxt-link>
         </li>
       </ul>
       <ul class="gnav">
         <li class="gnav__item">
-          <nuxt-link to="/pages" class="gnav__link">
+          <nuxt-link to="/#skill" class="gnav__link">
             スキルセット
           </nuxt-link>
         </li>
       </ul>
       <ul class="gnav">
         <li class="gnav__item">
-          <nuxt-link to="" class="gnav__link">
+          <nuxt-link to="/#contact" class="gnav__link">
             仕事の相談
           </nuxt-link>
         </li>
@@ -114,19 +114,17 @@
     line-height: 1.8;
     margin-bottom: 16px;
   }
-}
-
-.footer-nav__item + .footer-nav__item:before {
-  content: "|";
-  margin: 0 8px;
-  @include sp {
-    display: none;
+  &__item + .footer-nav__item:before {
+    content: "|";
+    margin: 0 8px;
+   @include sp {
+     display: none;
+    }
   }
-}
-
-.footer-nav__link {
+  &__link {
   text-decoration: none;
   color: inherit;
+  }
 }
 
 .section {

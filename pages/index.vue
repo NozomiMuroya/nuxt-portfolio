@@ -45,7 +45,7 @@
         </h2>
         <div class="grid">
           <div class="card">
-            <div id="#skill" class="skill">
+            <div class="skill">
               <figure class="skill__icon">
                 <img src="/website.svg" alt="">
               </figure>
@@ -158,7 +158,7 @@
         <span class="heading__main">CONTACT</span>
         <span class="heading__sub">お問い合わせ</span>
       </h2>
-      <form id="#contact" class="contact">
+      <form class="contact">
         <label for="name" class="contact__label">名前<span class="required">*</span></label>
         <input
           type="text"
