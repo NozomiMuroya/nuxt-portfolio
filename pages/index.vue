@@ -161,8 +161,8 @@
       <form class="contact">
         <label for="name" class="contact__label">名前<span class="required">*</span></label>
         <input
+          id="name"
           type="text"
-          d="name"
           name="name"
           class="input"
           autocomplete="name"
