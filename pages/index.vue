@@ -19,7 +19,7 @@
           <div class="profile__body">
             <p class="profile__name">
               <ruby>
-                山田<rt>やまだ</rt><rt>たろう</rt>
+                Muroya<rt>ムロヤ</rt><rt>-Nozomi</rt>
               </ruby>
             </p>
             <p class="profile__text">
@@ -47,7 +47,7 @@
           <div class="card">
             <div class="skill">
               <figure class="skill__icon">
-                <img src="/website.svg" alt="">
+                <i class="fab fa-html5" />
               </figure>
               <h3 class="skill__title">
                 HTML/CSS
@@ -60,7 +60,7 @@
           <div class="card">
             <div class="skill">
               <figure class="skill__icon">
-                <img src="/webdesign.svg" alt="">
+                <i class="fab fa-adobe" />
               </figure>
               <h3 class="skill__title">
                 AdobeXD
@@ -73,7 +73,7 @@
           <div class="card">
             <div class="skill">
               <figure class="skill__icon">
-                <img src="/git.svg" alt="">
+                <i class="fab fa-github" />
               </figure>
               <h3 class="skill__title">
                 Git開発
@@ -86,7 +86,7 @@
           <div class="card">
             <div class="skill">
               <figure class="skill__icon">
-                <img src="/wordpress.svg" alt="">
+                <i class="fab fa-wordpress-simple" />
               </figure>
               <h3 class="skill__title">
                 WordPress
@@ -99,7 +99,7 @@
           <div class="card">
             <div class="skill">
               <figure class="skill__icon">
-                <img src="/jquery.svg" alt="">
+                <i class="fab fa-js-square" />
               </figure>
               <h3 class="skill__title">
                 jQuery
@@ -112,7 +112,7 @@
           <div class="card">
             <div class="skill">
               <figure class="skill__icon">
-                <img src="/seo.svg" alt="">
+                <i class="fas fa-chart-line" />
               </figure>
               <h3 class="skill__title">
                 SEO

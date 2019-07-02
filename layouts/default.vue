@@ -6,23 +6,17 @@
       </p>
       <ul class="gnav">
         <li class="gnav__item">
-          <nuxt-link to="/#profile" href="#profile" class="gnav__link">
-            プロフィール
-          </nuxt-link>
+          <a href="/#profile" class="gnav__link">プロフィール</a>
         </li>
       </ul>
       <ul class="gnav">
         <li class="gnav__item">
-          <nuxt-link to="/#skill" class="gnav__link">
-            スキルセット
-          </nuxt-link>
+          <a href="#skill" class="gnav__link">スキルセット</a>
         </li>
       </ul>
       <ul class="gnav">
         <li class="gnav__item">
-          <nuxt-link to="/#contact" class="gnav__link">
-            仕事の相談
-          </nuxt-link>
+          <a href="#contact" class="gnav__link">仕事の相談</a>
         </li>
       </ul>
     </header>
@@ -53,7 +47,6 @@
   justify-content: space-between;
   line-height: 56px;
   color: #fff;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -67,12 +60,16 @@
 
 .gnav {
   display: flex;
+  &__item {
+    display: block;
+  }
   &__link {
     padding: 0 8px;
     font-size: 13px;
     position: relative;
     line-height: 56px;
-    display: block;
+    text-decoration: none;
+    color: #fff;
     &:after {
       content: "";
       display: block;
